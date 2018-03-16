@@ -1,7 +1,6 @@
 # Site settings
 title:          Yitong's Blog
-description:    "记录"
-baseurl:        "/blog"
+baseurl:        "/yitong-huang.github.io"
 url:            "https://yitong-huang.github.io"
 
 # Author
