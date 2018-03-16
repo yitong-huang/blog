@@ -4,7 +4,7 @@ title: "About"
 author: "Yitong Huang"
 permalink: /about/
 ---
-### Name: Huang Yitong 黄翊桐
+### Name: Yitong HUANG 黄翊桐
 
 ### Age: 27
 
