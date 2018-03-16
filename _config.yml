@@ -1,0 +1,27 @@
+# Site settings
+title:          Yitong's Blog
+description:    "记录"
+baseurl:        "/blog"
+url:            "https://yitong-huang.github.io"
+
+# Author
+author:
+  name:         Yitong Huang
+  url:          https://yitong0768.cc
+  email:        yitong0768@gmail.com
+
+# Build settings
+markdown:       kramdown
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       10
