@@ -2,21 +2,6 @@
 layout: default
 ---
 
-<div id="gitmentContainer"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-    owner: 'yitong-huang',
-    repo: 'yitong-huang.github.io',
-    oauth: {
-        client_id: '8d458b821d2360cda0db',
-        client_secret: '8eafcf547ab2b74ff8b2389df55dae0f7a15fcb7',
-    },
-});
-gitment.render('gitmentContainer');
-</script>
-
 <div class="post">
   <div class="post-info">
     <span>Written by</span>
@@ -49,3 +34,18 @@ gitment.render('gitmentContainer');
 
   <a href="#" class="top">Top</a>
 </div>
+
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'yitong-huang',
+    repo: 'yitong-huang.github.io',
+    oauth: {
+        client_id: '8d458b821d2360cda0db',
+        client_secret: '8eafcf547ab2b74ff8b2389df55dae0f7a15fcb7',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
