@@ -39,6 +39,18 @@ layout: default
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
+const myTheme = {
+  render(state, instance) {
+    const container = document.createElement('div')
+    container.lang = "en-US"
+    container.className = 'gitment-container gitment-root-container'
+    
+    container.appendChild(instance.renderHeader(state, instance))
+    container.appendChild(instance.renderComments(state, instance))
+    container.appendChild(instance.renderEditor(state, instance))
+    return container
+  },
+}
 var gitment = new Gitment({
     owner: 'yitong-huang',
     repo: 'yitong-huang.github.io',
@@ -46,6 +58,8 @@ var gitment = new Gitment({
         client_id: '8d458b821d2360cda0db',
         client_secret: '8eafcf547ab2b74ff8b2389df55dae0f7a15fcb7',
     },
+    theme: myTheme,
 });
+
 gitment.render('gitmentContainer');
 </script>
