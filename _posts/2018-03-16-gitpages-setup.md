@@ -7,7 +7,7 @@ author: "Yitong Huang"
 使用Git pages + jekyll构建个人博客；使用gitment添加评论功能；关联个人域名。
 <!--more-->
 
-## 创建git pages
+## 1.创建git pages
 
 1. 新建repo，仓库名为` <username>.github.io `，其中username必须与github用户名完全相同。
 
@@ -17,7 +17,7 @@ author: "Yitong Huang"
 
 4. 浏览器中输入` <username>.github.io `验证。
 
-## 关联个人域名
+## 2.关联个人域名
 
 1. 申请个人域名，个人在万网上申请。
 
@@ -31,7 +31,7 @@ author: "Yitong Huang"
 
 5. 过几分钟后浏览器中输入` xxx.com `验证.
 
-## 配置jekyll
+## 3.配置jekyll
 
 1. mac安装jekyll：参考[官方文档](https://jekyllrb.com/docs/installation/)
 
@@ -43,20 +43,20 @@ author: "Yitong Huang"
 
     ```
     .
-	├── _config.yml
-	├── _drafts
-	├── _includes
-	|   ├── footer.html
-	|   └── header.html
-	├── _layouts
-	|   ├── default.html
-	|   └── post.html
-	├── _posts
-	|   ├── 2018-03-16-gitpages-setup.md
-	├── _data
-	|   └── members.yml
-	├── _site
-	└── index.html
+    +-- _config.yml
+    +-- _drafts
+    +-- _includes
+    |   +-- footer.html
+    |   +-- header.html
+    +-- _layouts
+    |   +-- default.html
+    |   +-- post.html
+    +-- _posts
+    |   +-- 2018-03-16-gitpages-setup.md
+    +-- _data
+    |   +--members.yml
+    +-- _site
+    +-- index.html
     ```
 
 3. 添加文章
@@ -67,7 +67,7 @@ author: "Yitong Huang"
 
     在项目根目录下执行``` bundle exec jekyll serve ```，jekyll根据配置文件及\_post内容生成html文件，保存在\_site目录下。同时本地启动jekyll服务器，只要在浏览器中输入``` http://127.0.0.1:4000/ ```即可访问项目首页。
 
-## 使用gitment评论
+## 4.使用gitment评论
 
 1. 注册OAuth Application
 
