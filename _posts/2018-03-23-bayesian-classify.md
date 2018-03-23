@@ -93,6 +93,27 @@ P(credit_rating=fair|buys_computer=yes) =6/9=0.666 \\
 P(credit_rating=fair|buys_computer=no) =2/5=0.400
 $$
 
+由此可以计算：
+
+$$
+P(X|buys_computer=yes)=0.222\times 0.444\times 0.666\times 0.666=0.044 \\
+P(X|buys_computer=no)=0.600\times 0.400\times 0.200\times 0.400=0.019 
+$$
+
+接着计算\\(P(X\|C_i)\\)，并找出最大值对于的类：
+
+$$
+P(X|buys_computer=yes)P(buys_computer=yes)=0.044\times 0.643=0.028 \\
+P(X|buys_computer=no)P(buys_computer=no)=0.019\times 0.357=0.007
+$$
+
+可见，对于给定的元组*X*，使用朴素贝叶斯分类为buys_computer=yes。
+
+## 其他
+
+* 对于可能遇到零概率值的处理方法：可以对每个计数加1，在样本很大的情况下基本不影响概率估算结果。
+
+* 贝叶斯分类法理论上讲具有很小的错误率，但实际上并非总是很理想，主要是由于假设（类条件独立）不一定成立，或者数据量不足造成的。
 
 ---
 
