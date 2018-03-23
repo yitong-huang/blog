@@ -101,7 +101,7 @@ D -->|fair| H((yes))
 
 ## 三、例子
 
-RID|age|income|student|credit_rating|CLASS:buss_computer
+RID|age|income|student|credit_rating|CLASS:buys_computer
 ---|---|------|-------|-------------|-------------------
 1 |youth     |high  |no |fair     |no
 2 |youth     |high  |no |excellent|no
@@ -157,5 +157,5 @@ $$GainRatio(income)=\frac{Gain(income)}{SplitInfo_A(D)}=0.029/1.557=0.019$$
 
 ---
 
-参考文献：  
+参考资料：  
 《数据挖掘·概念与技术》 8.2
