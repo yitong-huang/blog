@@ -1,12 +1,12 @@
 # Site settings
 title:          Yitong's Blog
 baseurl:        ""
-url:            "http://yitong0768.cc"
+url:            "http://blog.huangyt.tech"
 
 # Author
 author:
   name:         Yitong Huang
-  url:          http://yitong0768.cc
+  url:          http://blog.huangyt.tech
   email:        yitong0768@gmail.com
 
 # Build settings
