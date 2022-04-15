@@ -43,38 +43,6 @@ layout: default
 <script src="/assets/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
 
-<!-- gitment -->
-<!--
-<div id="gitmentContainer" style="border-top:0.5px solid #e5e5e5; padding-top:2rem; margin-top:2rem"></div>
-<link rel="stylesheet" href="/assets/gitment_default.css">
-<script src="/assets/gitment_browser.js"></script>
-<script>
-const myTheme = {
-  render(state, instance) {
-    const container = document.createElement('div')
-    container.lang = "en-US"
-    container.className = 'gitment-container gitment-root-container'
-    
-    container.appendChild(instance.renderHeader(state, instance))
-    container.appendChild(instance.renderComments(state, instance))
-    container.appendChild(instance.renderEditor(state, instance))
-    return container
-  },
-}
-var gitment = new Gitment({
-    owner: 'yitong-huang',
-    repo: 'blog',
-    oauth: {
-        client_id: '8d458b821d2360cda0db',
-        client_secret: '8eafcf547ab2b74ff8b2389df55dae0f7a15fcb7',
-    },
-    theme: myTheme,
-});
-
-gitment.render('gitmentContainer');
-</script>
--->
-
 <!-- GitTalk -->
 <div id="gitment-ctn"></div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
@@ -86,8 +54,9 @@ var gitalk = new Gitalk({
   repo: 'blog',
   owner: 'yitong-huang',
   admin: ['yitong-huang'],
-  id: location.href,      // Ensure uniqueness and length less than 50
-  distractionFreeMode: false  // Facebook-like distraction free mode
+  id: location.href,
+  distractionFreeMode: true
+  language: en
 })
 gitalk.render('gitment-ctn')
 </script>
