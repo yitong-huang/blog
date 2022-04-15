@@ -54,7 +54,7 @@ var gitalk = new Gitalk({
   repo: 'blog',
   owner: 'yitong-huang',
   admin: ['yitong-huang'],
-  id: location.href,
+  id: '{{page.url}}'.replace("https://blog.huangyt.tech", ""),
   distractionFreeMode: false,
   language: 'en'
 })
