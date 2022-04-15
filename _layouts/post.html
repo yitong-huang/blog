@@ -44,6 +44,7 @@ layout: default
 <script>mermaid.initialize({startOnLoad:true});</script>
 
 <!-- gitment -->
+<!--
 <div id="gitmentContainer" style="border-top:0.5px solid #e5e5e5; padding-top:2rem; margin-top:2rem"></div>
 <link rel="stylesheet" href="/assets/gitment_default.css">
 <script src="/assets/gitment_browser.js"></script>
@@ -71,4 +72,22 @@ var gitment = new Gitment({
 });
 
 gitment.render('gitmentContainer');
+</script>
+-->
+
+<!-- GitTalk -->
+<div id="gitment-ctn"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+var gitalk = new Gitalk({
+  clientID: '8d458b821d2360cda0db',
+  clientSecret: '8eafcf547ab2b74ff8b2389df55dae0f7a15fcb7',
+  repo: 'blog',
+  owner: 'yitong-huang',
+  admin: ['yitong-huang'],
+  id: location.href,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+})
+gitalk.render('gitment-ctn')
 </script>
