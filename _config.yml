@@ -20,6 +20,7 @@ sass:
 # Gems
 plugins:
   - jekyll-paginate
+  - mermaid-gb3
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
